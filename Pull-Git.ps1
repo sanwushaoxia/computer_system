@@ -15,7 +15,7 @@ if ($Message) {
 }
 
 Write-Host "正在从 GitHub 拉取 $branch ..."
-$pull = & git pull --rebase origin $branch 2>&1
+$pull = & cmd /c "git pull --rebase origin $branch 2>&1"
 if ($LASTEXITCODE -ne 0) {
     Write-Host ($pull -join "`n") -ForegroundColor Red
     & git rebase --abort 2>$null
