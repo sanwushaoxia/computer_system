@@ -9,12 +9,12 @@ Windows 安装盘制作工具集：`win10\`（Win10 Rufus/Ventoy 安装盘）、
 ### 1. 代码（小，git push / pull）
 
 ```bash
-# 本机推送（双击 push.bat，或指定提交信息）
-powershell -File Push-Git.ps1 -Message "说明"
+# 本机推送（双击 scripts\push.bat，或指定提交信息）
+powershell -File scripts\Push-Git.ps1 -Message "说明"
 
-# 其他机器拉取（双击 pull.bat）
+# 其他机器拉取（双击 scripts\pull.bat）
 git clone https://github.com/sanwushaoxia/computer_system.git   # 首次
-powershell -File Pull-Git.ps1                                   # 后续更新
+powershell -File scripts\Pull-Git.ps1                           # 后续更新
 ```
 
 git 只包含：`scripts\*.ps1`、`*.bat`、`docs\`、`logs\`、`README.md`（详见 `.gitignore`）。
@@ -25,8 +25,8 @@ git 只包含：`scripts\*.ps1`、`*.bat`、`docs\`、`logs\`、`README.md`（�
 **本机导出（二选一）：**
 
 ```
-双击 pack.bat                              → 生成 pack\ 目录（ISO 为硬链接，秒完成）
-powershell -File Pack-LargeFiles.ps1 -Zip  → 生成 pack\computer-system-largefiles-<时间>.zip
+双击 scripts\pack.bat                       → 生成 pack\ 目录（ISO 为硬链接，秒完成）
+powershell -File scripts\Pack-LargeFiles.ps1 -Zip  → 生成 pack\computer-system-largefiles-<时间>.zip
 ```
 
 - `pack\` 目录可直接整体上传（网盘/移动硬盘）；zip 模式适合单文件传输
@@ -36,8 +36,8 @@ powershell -File Pack-LargeFiles.ps1 -Zip  → 生成 pack\computer-system-large
 **其他机器导入（自动化）：**
 
 ```
-把 pack 目录（或 zip）放到仓库根目录旁边，双击 unpack.bat
-或：powershell -File Unpack-LargeFiles.ps1 [-Source pack\...] [-KeepSource]
+把 pack 目录（或 zip）放到仓库根目录旁边，双击 scripts\unpack.bat
+或：powershell -File scripts\Unpack-LargeFiles.ps1 [-Source pack\...] [-KeepSource]
 ```
 
 - 自动识别来源：`pack\` 目录或 `computer-system-largefiles-*.zip`（zip 先解压到临时目录）

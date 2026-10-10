@@ -36,4 +36,4 @@ Write-Host '正在推送到 GitHub...'
 $push = & cmd /c "git push origin $branch 2>&1"
 $push | ForEach-Object { Write-Host $_ }
 if ($LASTEXITCODE -ne 0) { throw "push 失败，退出码 $LASTEXITCODE。" }
-Write-Host '推送完成。大文件不随 git 上传，需要同步时另跑 pack.bat。' -ForegroundColor Green
+Write-Host '推送完成。大文件不随 git 上传，需要同步时另跑 scripts\pack.bat。' -ForegroundColor Green

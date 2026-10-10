@@ -22,4 +22,4 @@ if ($LASTEXITCODE -ne 0) {
     throw 'pull --rebase 失败，已回退。请手动解决冲突后重试。'
 }
 Write-Host ($pull -join "`n")
-Write-Host '拉取完成。镜像/工具等大文件不在 git 里，需要时把 pack 包放到仓库根目录后双击 unpack.bat。' -ForegroundColor Green
+Write-Host '拉取完成。镜像/工具等大文件不在 git 里，需要时把 pack 包放到仓库根目录后双击 scripts\unpack.bat。' -ForegroundColor Green
