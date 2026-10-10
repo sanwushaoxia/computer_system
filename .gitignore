@@ -1,0 +1,16 @@
+# ============ 大文件：不进 git，用 Pack-LargeFiles.ps1 打包上传 ============
+# 系统镜像
+win10/image/
+win7/image/
+*.iso
+*.wim
+
+# 公共工具（二进制，随包上传）
+rufus/
+ventoy/
+
+# 解压出来的工具目录（可由压缩包重新解压生成）
+win10/tools/
+
+# 打包脚本的输出目录
+pack/

@@ -1,0 +1,44 @@
+﻿
+[12:19:31] START
+[12:19:32] Source: E:\
+[12:19:32] Removing old iso_clean...
+[12:19:32] Removing: C:\Backup\Win7_InstallUSB\iso_clean\System Volume Information
+[12:19:33] Robocopy clean files...
+[12:19:42] staged: boot
+[12:19:42] staged: efi
+[12:19:42] staged: sources
+[12:19:42] staged: support
+[12:19:42] staged: upgrade
+[12:19:42] staged: 装机软件
+[12:19:42] staged: BOOTEX.LOG
+[12:19:42] staged: bootmgr
+[12:19:42] staged: bootmgr.efi
+[12:19:42] staged: NTLite.log
+[12:19:42] staged: setup.exe
+[12:19:42] staged: 自动保存会话 50bc83dd.xml
+[12:19:42] staged: 自动保存会话 62ef2aa4.xml
+[12:19:42] Staging OK
+[12:19:45] Downloading ADKsetup (Deployment Tools)...
+[12:19:51] Installing Deployment Tools...
+[12:22:38] ADKsetup exit=0
+[12:22:41] oscdimg: C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\Oscdimg\oscdimg.exe
+[12:22:41] Running oscdimg...
+[12:22:50] oscdimg exit=0
+[12:22:54] OUT size=3852859392
+[12:22:54] SHA256=AD6677A5D02F41EB0D2D30C88CD179BC1DED465F9E388B23CEB103652516D53A
+[12:22:57] Replaced win7_install_usb.iso
+[12:22:57] VERIFY OK: mounted as E: no System Volume Information
+[12:22:57] iso: boot
+[12:22:57] iso: efi
+[12:22:57] iso: sources
+[12:22:57] iso: support
+[12:22:57] iso: upgrade
+[12:22:57] iso: 装机软件
+[12:22:57] iso: BOOTEX.LOG
+[12:22:57] iso: NTLite.log
+[12:22:57] iso: bootmgr
+[12:22:57] iso: bootmgr.efi
+[12:22:57] iso: setup.exe
+[12:22:57] iso: 自动保存会话 50bc83dd.xml
+[12:22:57] iso: 自动保存会话 62ef2aa4.xml
+[12:22:57] DONE
