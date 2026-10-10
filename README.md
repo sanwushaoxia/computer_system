@@ -9,14 +9,12 @@ Windows 安装盘制作工具集：`win10\`（Win10 Rufus/Ventoy 安装盘）、
 ### 1. 代码（小，git push / pull）
 
 ```bash
-# 本机推送
-git add -A
-git commit -m "..."
-git push
+# 本机推送（双击 push.bat，或指定提交信息）
+powershell -File Push-Git.ps1 -Message "说明"
 
-# 其他机器拉取
-git clone <仓库地址>          # 首次
-git pull                      # 后续更新
+# 其他机器拉取（双击 pull.bat）
+git clone https://github.com/sanwushaoxia/computer_system.git   # 首次
+powershell -File Pull-Git.ps1                                   # 后续更新
 ```
 
 git 只包含：`scripts\*.ps1`、`*.bat`、`docs\`、`logs\`、`README.md`（详见 `.gitignore`）。
