@@ -3,7 +3,7 @@
 )
 
 $ErrorActionPreference = 'Stop'
-$RepoRoot = $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $RepoRoot
 
 $branch = (& git branch --show-current 2>$null | Where-Object { $_ }) -join ''

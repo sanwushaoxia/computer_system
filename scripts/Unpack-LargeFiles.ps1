@@ -4,7 +4,7 @@
 )
 
 $ErrorActionPreference = 'Stop'
-$RepoRoot = $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 
 $items = @(

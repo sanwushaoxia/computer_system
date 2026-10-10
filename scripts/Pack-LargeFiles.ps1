@@ -3,7 +3,7 @@
 )
 
 $ErrorActionPreference = 'Stop'
-$RepoRoot = $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $PackDir = Join-Path $RepoRoot 'pack'
 
 $items = @(

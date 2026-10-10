@@ -3,7 +3,7 @@
 )
 
 $ErrorActionPreference = 'Stop'
-$RepoRoot = $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $RepoRoot
 
 function Git-Line($Output) { ($Output | Where-Object { $_ -ne '' }) -join ' ' }
